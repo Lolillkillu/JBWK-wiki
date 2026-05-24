@@ -31,7 +31,7 @@ server/views/setup.pug
 
 # Data directories
 # /repo
-/data
+# /data
 /uploads
 /content
 /temp
@@ -47,3 +47,5 @@ test-results/
 
 # Localization Resources
 /server/locales/**/*.yml
+
+*.bin
