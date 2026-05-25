@@ -2,19 +2,143 @@
 title: Home page
 description: 
 published: true
-date: 2026-05-24T02:39:11.871Z
+date: 2026-05-25T05:17:41.672Z
 tags: 
 editor: code
 dateCreated: 2026-05-23T19:29:40.561Z
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wiki.js – Strona główna</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5; /* neutralne tło */
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wikijs-homepage-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .wikijs-homepage-container .logo-container {
+      width: 100%;
+      max-width: 800px;  
+      margin-bottom: 2rem;
+    }
+
+    .wikijs-homepage-container .logo-container svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+    }
+
+    .wikijs-homepage-container .description {
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: #444;
+      margin-top: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .wikijs-homepage-container .description strong {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .wikijs-homepage-container .outer {
+      fill: #fff;
+      stroke: #fff;
+      stroke-width: 56.7;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 10;
+      stroke-linecap: square;
+      paint-order: stroke fill;
+    }
+
+    .wikijs-homepage-container .middle {
+      fill: #000;
+      stroke: #000;
+      stroke-width: 34.02;
+      stroke-linejoin: miter;
+      stroke-miterlimit: 10;
+      stroke-linecap: square;
+      paint-order: stroke fill;
+    }
+
+    .wikijs-homepage-container .inner {
+      fill: #fff;
+    }
+  </style>
 </head>
 <body>
-  <p>Test test test</p>
+
+  <div class="wikijs-homepage-container">
+    <div class="logo-container">
+      <svg id="Layer_2"
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 1028.29 699.10"
+           role="img"
+           aria-label="JBWK Wiki logo">
+        
+        <g id="Layer_1-2">
+          <g class="outer">
+            <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+            <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+            <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+            <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+            <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+            <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+            <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+            <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+          </g>
+
+          <g class="middle">
+            <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+            <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+            <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+            <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+            <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+            <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+            <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+            <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+          </g>
+
+          <g class="inner">
+            <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+            <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+            <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+            <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+            <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+            <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+            <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+            <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <p class="description">
+      <strong>JBWK WIKI</strong> – sth sth sth sth sth ddddd u pp aaaaa
+    </p>
+  </div>
+
 </body>
 </html>
