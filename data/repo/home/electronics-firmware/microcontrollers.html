@@ -1,31 +1,14 @@
 <!--
-title: Home page
+title: Microcontrollers
 description: 
 published: true
-date: 2026-06-15T23:05:03.876Z
+date: 2026-06-21T01:02:01.003Z
 tags: 
 editor: code
-dateCreated: 2026-05-23T19:29:40.561Z
+dateCreated: 2026-06-21T01:01:59.123Z
 -->
 
 <style>
-  .keycap-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .keycap-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.12), 0 0 0 1px rgba(59,130,246,0.2);
-  }
-  .search-btn {
-    transition: background 0.2s, transform 0.1s;
-  }
-  .search-btn:hover {
-    background: #2563eb;
-  }
-  .search-btn:active {
-    transform: scale(0.97);
-  }
-
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
@@ -73,7 +56,7 @@ dateCreated: 2026-05-23T19:29:40.561Z
   .mw-category-list {
     list-style: none;
     padding-left: 0;
-    column-count: 3;
+    column-count: 2;
     column-gap: 2rem;
   }
   .mw-category-list li {
@@ -104,18 +87,15 @@ dateCreated: 2026-05-23T19:29:40.561Z
     text-align: center;
   }
   @media (max-width: 768px) {
-    .mw-category-list { column-count: 2; }
-  }
-  @media (max-width: 540px) {
     .mw-category-list { column-count: 1; }
   }
 </style>
 
 <div style="max-width:1100px; margin:0 auto; padding:2rem 1rem; font-family:system-ui, -apple-system, sans-serif; color:#0f172a;">
 
-  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 24px; padding: 3rem 2rem; margin-bottom: 2.5rem; text-align: center; color: #fff; box-shadow: 0 8px 32px rgba(102,126,234,0.25);" class="fade-section">
-    
-    <div style="width:80px; margin:0 auto 1.2rem;">
+  <!-- ===== HEADER ===== -->
+  <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:2rem;" class="fade-section">
+    <div style="width:80px!important; max-width:80px!important; margin:0 auto;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.29 699.10" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block; width:100%; height:auto;">
         <g style="fill:#fff;stroke:#fff;stroke-width:56.7;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
           <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
@@ -149,59 +129,94 @@ dateCreated: 2026-05-23T19:29:40.561Z
         </g>
       </svg>
     </div>
-    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; background:rgba(255,255,255,0.18); padding:0.2rem 1rem; border-radius:20px; display:inline-block; margin-bottom:1.5rem;">Ddd uuu pppp aaaa</span>
-    
-    <h1 id="witaj-w-jbwk-wiki" style="font-size:2.2rem; font-weight:700; margin:0 0 0.5rem; color:#fff; text-decoration:none; border-bottom:none;">Welcome to JBWK Wiki</h1>
-    <p style="font-size:1.1rem; opacity:0.9; margin:0 0 1.8rem;">knowledge base about keyboards – some description idk what to write so I'm writing whatever, but I have no idea.</p>
- 
-    <form action="/search" method="GET" style="display:flex; max-width:500px; margin:0 auto;">
-      <input type="text" name="q" placeholder="Search the wiki..." style="flex:1; padding:0.75rem 1rem; border:none; border-radius:12px 0 0 12px; font-size:1rem; outline:none; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-      <button type="submit" class="search-btn" style="background:#3b82f6; color:#fff; border:none; padding:0 1.5rem; border-radius:0 12px 12px 0; font-weight:600; font-size:1rem; cursor:pointer; display:flex; align-items:center; gap:0.4rem;">
-        <span style="font-size:1.2rem;"></span> Search
-      </button>
-    </form>
+    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#475569; background:#f1f5f9; padding:0.2rem 1rem; border-radius:20px; margin-top:0.5rem;">Embedded · Hardware</span>
+  </div>
+
+  <div style="text-align:center; margin-bottom:2.5rem;" class="fade-section fade-delay-1">
+    <h1 style="font-size:1.8rem; font-weight:700; margin:0 0 0.4rem;">Microcontrollers</h1>
+    <p style="font-size:1rem; color:#475569; margin:0;">ARM Cortex‑M, AVR, RISC‑V, ESP32 and RP2040</p>
   </div>
 
   <div class="wikimedia-category fade-section fade-delay-2">
-    <div class="cat-header">
-      <div class="cat-title">Browse sections</div>
-      <div class="cat-desc">Click a category to check.</div>
-    </div>
+
     <div class="cat-section">
+      <h2>ARM Cortex‑M</h2>
       <ul class="mw-category-list">
         <li>
-          <a href="/en/home/physics-acoustics">Physics & Acoustics</a>
+          <strong>Cortex‑M0 / M0+</strong>
+          <span class="item-desc">Ultra‑low‑power 32‑bit cores for simple, cost‑sensitive applications. Used in many entry‑level MCUs from NXP, ST, and Silicon Labs.</span>
         </li>
         <li>
-          <a href="/en/home/materials-science-engineering">Materials Science & Engineering</a>
+          <strong>Cortex‑M3 / M4</strong>
+          <span class="item-desc">Balanced performance and power efficiency. M4 includes a FPU and DSP extensions, making it ideal for motor control and audio applications.</span>
         </li>
         <li>
-          <a href="/en/home/electronics-firmware">Electronics & Firmware</a>
-        </li>
-        <li>
-          <a href="/en/home/design-layouts">Design & Layouts</a>
-        </li>
-        <li>
-          <a href="/en/home/history-retro">History & Retro</a>
-        </li>
-        <li>
-          <a href="/en/home/switches">Switches</a>
-        </li>
-        <li>
-          <a href="/en/home/keycaps">Keycaps</a>
-        </li>
-        <li>
-          <a href="/en/home/modding-diy">Modding & DIY</a>
-        </li>
-        <li>
-          <a href="/en/home/guides">Guides</a>
+          <strong>Cortex‑M7 / M33</strong>
+          <span class="item-desc">High‑performance cores with caches and branch prediction. M33 adds TrustZone for secure applications and is used in industrial and IoT edge devices.</span>
         </li>
       </ul>
     </div>
+
+    <div class="cat-section">
+      <h2>AVR</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Classic AVR</strong>
+          <span class="item-desc">8‑bit RISC architecture with a large family (ATmega, ATtiny). Famous for Arduino Uno (ATmega328P), simple peripherals, and extensive community support.</span>
+        </li>
+        <li>
+          <strong>AVR‑DA / AVR‑DB</strong>
+          <span class="item-desc">Modern AVR devices with improved analog features (op‑amps, DACs), event system, and higher clock speeds – bridging 8‑bit simplicity with modern peripherals.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>RISC‑V</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Open Standard ISA</strong>
+          <span class="item-desc">A free and open RISC instruction set architecture. Growing ecosystem with cores from SiFive, Western Digital, and many open‑source implementations.</span>
+        </li>
+        <li>
+          <strong>Embedded RISC‑V</strong>
+          <span class="item-desc">RISC‑V MCUs are emerging in the market (e.g. GD32V, CH32V). They offer a modern alternative to ARM with comparable performance and toolchain support.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>ESP32</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>ESP32‑S / C Series</strong>
+          <span class="item-desc">Dual‑core Xtensa or RISC‑V processors with integrated Wi‑Fi and Bluetooth. The S2, S3, and C3 series target different performance and power profiles.</span>
+        </li>
+        <li>
+          <strong>ESP‑IDF Framework</strong>
+          <span class="item-desc">Espressif's official development framework with FreeRTOS, extensive drivers, and a rich set of examples for IoT and connected applications.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>RP2040</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Dual‑Core Cortex‑M0+</strong>
+          <span class="item-desc">Raspberry Pi's custom MCU with two cores, 264 kB SRAM, and a flexible PIO state machine for bit‑banging high‑speed protocols.</span>
+        </li>
+        <li>
+          <strong>Raspberry Pi Pico</strong>
+          <span class="item-desc">The reference board for RP2040, popular in education and hobbyist projects. Supports MicroPython, C/C++, and Arduino with excellent community support.</span>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
-  <div style="text-align:center; margin-top:3rem; padding-top:1.5rem; border-top:1px solid #e2e8f0; font-size:0.85rem; color:#94a3b8;" class="fade-section fade-delay-3">
-    <p style="margin:0;">something something something idk</p>
+  <div class="cat-footer fade-section fade-delay-3">
+    <a href="/en/home/electronics-firmware" style="color:#0645ad; text-decoration:none;">← Back to Electronics &amp; Firmware</a>
   </div>
 
 </div>

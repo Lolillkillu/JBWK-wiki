@@ -1,0 +1,391 @@
+<!--
+title: Metals
+description: 
+published: true
+date: 2026-06-29T00:57:05.274Z
+tags: 
+editor: code
+dateCreated: 2026-06-28T23:58:46.761Z
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metals – Materials Science & Engineering – Wiki.js</title>
+    <style>
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-section { animation: fadeUp 0.6s ease both; }
+        .fade-delay-1 { animation-delay: 0.1s; }
+        .fade-delay-2 { animation-delay: 0.2s; }
+        .fade-delay-3 { animation-delay: 0.3s; }
+
+        .wikimedia-category {
+            max-width: 1100px;
+            margin: 0 auto;
+            font-family: system-ui, -apple-system, sans-serif;
+            color: #202122;
+        }
+        .cat-section {
+            margin: 2rem 0 1.5rem;
+        }
+        .cat-section h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 1rem;
+            padding-bottom: 0.2rem;
+        }
+        .mw-category-list {
+            list-style: none;
+            padding-left: 0;
+            column-count: 2;
+            column-gap: 2rem;
+        }
+        .mw-category-list li {
+            break-inside: avoid;
+            margin-bottom: 0.75rem;
+            padding-left: 0.25rem;
+        }
+        .item-desc {
+            display: block;
+            font-size: 0.85rem;
+            color: #54595d;
+            margin-top: 0.2rem;
+        }
+        .cat-footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eaecf0;
+            font-size: 0.85rem;
+            color: #54595d;
+            text-align: center;
+        }
+
+        /* MediaWiki wikitable */
+        .wikitable-wrapper {
+            overflow-x: auto;
+            margin: 1rem 0 0.5rem;
+        }
+        table.wikitable {
+            border-collapse: collapse;
+            background-color: #f8f9fa;
+            color: #202122;
+            border: 1px solid #a2a9b1;
+            font-size: 0.85rem;
+            width: 100%;
+            min-width: 820px;
+        }
+        table.wikitable th,
+        table.wikitable td {
+            border: 1px solid #a2a9b1;
+            padding: 0.5rem 0.65rem;
+        }
+        table.wikitable > thead th {
+            background-color: #eaecf0;
+            font-weight: 600;
+            text-align: center;
+            vertical-align: bottom;
+        }
+        table.wikitable > thead th small {
+            font-weight: 400;
+        }
+        table.wikitable td {
+            text-align: center;
+        }
+        table.wikitable td:first-child {
+            text-align: left;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        table.wikitable tbody tr:nth-child(odd) td { background-color: #fff; }
+        table.wikitable tbody tr:nth-child(even) td { background-color: #f8f9fa; }
+        table.wikitable caption {
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.5rem 0;
+            caption-side: top;
+            text-align: left;
+            color: #202122;
+        }
+        .table-note {
+            font-size: 0.8rem;
+            color: #54595d;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .mw-category-list { column-count: 1; }
+        }
+    </style>
+</head>
+<body style="background:#f8f9fa; min-height:100vh; margin:0; padding:0; display:flex; align-items:flex-start; justify-content:center;">
+
+    <div style="max-width:1100px; width:100%; margin:0 auto; padding:2rem 1rem; font-family:system-ui, -apple-system, sans-serif; color:#0f172a;">
+      
+        <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:2rem;" class="fade-section">
+            <div style="width:80px!important; max-width:80px!important; margin:0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.29 699.10" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block; width:100%; height:auto;">
+                    <g style="fill:#fff;stroke:#fff;stroke-width:56.7;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+                        <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+                        <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+                        <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75H697.95V210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+                        <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+                        <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+                        <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+                        <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+                        <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+                    </g>
+                    <g style="fill:#000;stroke:#000;stroke-width:34.02;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+                        <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+                        <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+                        <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75H697.95V210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+                        <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+                        <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+                        <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+                        <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+                        <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+                    </g>
+                    <g style="fill:#fff;">
+                        <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+                        <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+                        <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75H697.95V210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+                        <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+                        <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+                        <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+                        <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+                        <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+                    </g>
+                </svg>
+            </div>
+            <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#475569; background:#f1f5f9; padding:0.2rem 1rem; border-radius:20px; margin-top:0.5rem;">Materials · Engineering</span>
+        </div>
+
+        <div style="text-align:center; margin-bottom:2.5rem;" class="fade-section fade-delay-1">
+            <h1 style="font-size:1.8rem; font-weight:700; margin:0 0 0.4rem;">Metals</h1>
+            <p style="font-size:1rem; color:#475569; margin:0;">Elastic, acoustic, and metallurgical properties of structural metals</p>
+        </div>
+
+        <div style="background:#f8fafc; border-left:4px solid #6366f1; border-radius:6px; padding:1rem 1.25rem; margin-bottom:2rem; font-size:0.9rem; color:#334155;" class="fade-section fade-delay-2">
+            <strong>Terminology Note</strong><br/>
+            <strong>Young's modulus (E)</strong> quantifies resistance to elastic deformation — the stiffness of the atomic lattice under tensile or compressive stress. <strong>Density (ρ)</strong> determines inertial response: heavier atoms and closer packing increase mass per unit volume. The <strong>specific modulus</strong> (E/ρ) dictates the wave propagation speed; notably, aluminium and carbon steel share nearly identical specific moduli (~25.5&nbsp;GPa/(g/cm³), or ~25.5&nbsp;×&nbsp;10⁶&nbsp;m²/s² in SI units), giving them similar bar-wave speeds despite a 3× difference in absolute stiffness.<br/><br/>
+            The <strong>speed of sound</strong> in a thin rod is v<sub>bar</sub>&nbsp;=&nbsp;√(E/ρ), while the longitudinal wave speed in a bulk, three-dimensional medium depends additionally on the bulk and shear moduli: v<sub>L</sub>&nbsp;=&nbsp;√((K&nbsp;+&nbsp;4G/3)/ρ). Because v<sub>L</sub> accounts for lateral inertia effects absent in a thin rod, v<sub>L</sub> is always higher than v<sub>bar</sub> (e.g., ~5960&nbsp;m/s vs. ~5050&nbsp;m/s for carbon steel); substituting tabulated v<sub>L</sub> values into the thin-rod formula will yield inconsistent results.<br/><br/>
+            <strong>Acoustic impedance</strong> Z&nbsp;=&nbsp;ρ&middot;v<sub>L</sub> governs reflection and transmission at an interface — a large impedance mismatch causes most incident energy to be reflected. All metals have Z&nbsp;&gt;&nbsp;17&nbsp;MRayl vs. air at ~0.0004&nbsp;MRayl, so the metal–air boundary is an almost perfect reflector; inter-metal differences in radiation efficiency are subtle but audible. <strong>Poisson's ratio (ν)</strong>, typically 0.29–0.35 for metals, links the elastic moduli: G&nbsp;=&nbsp;E/(2(1+ν)), K&nbsp;=&nbsp;E/(3(1−2ν)). <strong>Damping capacity</strong> — the fraction of vibrational energy dissipated per cycle as heat — determines how quickly a resonance decays; metals with low internal friction sustain vibrations longer, producing more pronounced ringing.
+        </div>
+
+        <div class="wikimedia-category fade-section fade-delay-2">
+
+            <div class="cat-section">
+                <h2>Aluminium</h2>
+                <ul class="mw-category-list">
+                    <li>
+                        <strong>Aluminium (Pure)</strong>
+                        <span class="item-desc">
+                            Aluminium (Al, Z&nbsp;=&nbsp;13) crystallises in an FCC structure with a lattice parameter of 4.05&nbsp;Å. Its relatively low density (2.70&nbsp;g/cm³), moderate Young's modulus (69&nbsp;GPa), and excellent corrosion resistance — owing to a self-healing Al₂O₃ passive film ~5&nbsp;nm thick — make it one of the most versatile structural metals. The high longitudinal speed of sound (~6420&nbsp;m/s) and low damping capacity (~0.5–1&nbsp;%) give aluminium components a characteristically bright, resonant acoustic signature with slowly decaying overtones. Pure aluminium is very soft (σ<sub>y</sub>&nbsp;≈&nbsp;10–20&nbsp;MPa); almost all engineering applications use precipitation-hardened alloys from the 2xxx, 5xxx, 6xxx, or 7xxx series.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>6061-T6</strong>
+                        <span class="item-desc">
+                            The most versatile heat-treatable aluminium alloy. Primary alloying elements: Mg&nbsp;(1.0&nbsp;%), Si&nbsp;(0.6&nbsp;%), with minor Cr&nbsp;(0.25&nbsp;%) and Cu&nbsp;(0.25&nbsp;%). Precipitation hardening via semi-coherent Mg₂Si β″ precipitates yields a T6 yield strength of ~276&nbsp;MPa and ultimate tensile strength of ~310&nbsp;MPa — over an order of magnitude stronger than the pure metal. Retains good corrosion resistance and weldability (though welding locally destroys the T6 temper, requiring re-solutionising and ageing for full recovery). Young's modulus ~68.9&nbsp;GPa, virtually identical to pure Al. Thermal conductivity is ~167&nbsp;W/(m·K), significantly lower than pure Al (237&nbsp;W/(m·K)) due to solute scattering of phonons and electrons. Elongation at break ~12&nbsp;%, providing a good balance of strength and ductility. Widely used in structural members, CNC-machined housings, and load-bearing frames.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>6063-T6</strong>
+                        <span class="item-desc">
+                            Often called the "architectural alloy" for its excellent extrudability and superior anodising response. Lower alloying content than 6061 — Mg&nbsp;(0.7&nbsp;%), Si&nbsp;(0.4&nbsp;%) — gives a slightly lower T6 yield strength of ~214&nbsp;MPa (UTS ~241&nbsp;MPa). The leaner chemistry produces a finer, more uniform anodic oxide layer, making it the preferred choice for visible extrusions requiring decorative or coloured anodised finishes. Same E&nbsp;≈&nbsp;68.9&nbsp;GPa and density as 6061. Thermal conductivity is slightly higher (~200&nbsp;W/(m·K)) due to reduced solute content. Where 6061 is selected for strength, 6063 is selected for form and finish. Both alloys share the same FCC crystal structure and nearly identical acoustic properties.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cat-section">
+                <h2>Steel</h2>
+                <ul class="mw-category-list">
+                    <li>
+                        <strong>Carbon Steel (1020)</strong>
+                        <span class="item-desc">
+                            Iron (Fe, Z&nbsp;=&nbsp;26) in its α-phase adopts a BCC structure (ferrite) at room temperature; austenite (γ-Fe, FCC) is stabilised by Ni, Mn, and other alloying elements above the eutectoid temperature or in stainless grades. Carbon steel (0.1–1.0&nbsp;%&nbsp;C) has a density of ~7.85&nbsp;g/cm³ and Young's modulus of ~200&nbsp;GPa — nearly three times that of aluminium — yielding a very high stiffness-to-volume ratio. The longitudinal speed of sound is ~5960&nbsp;m/s and acoustic impedance ~46.8&nbsp;MRayl, among the highest of common engineering metals. Despite its stiffness, carbon steel has low internal damping (~1&nbsp;% specific damping capacity), so thin plates can sustain pronounced resonant vibrations. Galvanising, phosphating, or painting is required to prevent atmospheric corrosion.
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Stainless Steel (304)</strong>
+                        <span class="item-desc">
+                            Replaces carbon with ≥10.5&nbsp;%&nbsp;Cr, which forms a Cr₂O₃ passive film. The austenitic FCC structure gives slightly lower E (~193&nbsp;GPa for 304) and higher density (~7.93&nbsp;g/cm³). Stainless steels are significantly harder to machine — work hardening during cutting causes rapid tool wear — but offer excellent corrosion resistance without surface treatment. Speed of sound in 304 is ~5790&nbsp;m/s. The higher Cr and Ni content reduces thermal conductivity to ~16&nbsp;W/(m·K) vs. ~50&nbsp;W/(m·K) for carbon steel, which affects thermal stress distribution in constrained geometries.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cat-section">
+                <h2>Brass</h2>
+                <ul class="mw-category-list">
+                    <li>
+                        <strong>Brass (CuZn30)</strong>
+                        <span class="item-desc">
+                            A substitutional solid solution of zinc in copper (Cu-Zn). Common alloys include CuZn30 (70/30, "yellow brass") and CuZn37 (63/37, "common brass"). The FCC copper lattice accommodates Zn atoms up to ~35&nbsp;% at room temperature as a single-phase α-solid solution; higher Zn content introduces the β′ phase (ordered BCC), which dramatically increases hardness but reduces ductility. Density ranges from ~8.4 to 8.5&nbsp;g/cm³ depending on composition; Young's modulus is ~100–110&nbsp;GPa — significantly lower than steel despite higher density. The longitudinal speed of sound is ~4700&nbsp;m/s, and acoustic impedance is ~40&nbsp;MRayl.<br/><br/>
+                            Brass exhibits moderate damping capacity (~1–3&nbsp;%), higher than steel or aluminium, which contributes to its characteristically warm, sustained resonance — the reason it has been the preferred material for musical instruments for millennia. The high density-to-stiffness ratio lowers the natural frequencies of a given geometry relative to steel, producing a deeper pitch. Brass tarnishes in air (copper oxide and carbonate surface films) unless clear-coated or regularly polished. It is highly machinable (especially free-cutting brass with Pb additions, which form chip-breaking inclusions) and does not spark, making it suitable for explosive environments.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cat-section">
+                <h2>Copper</h2>
+                <ul class="mw-category-list">
+                    <li>
+                        <strong>Copper (C110)</strong>
+                        <span class="item-desc">
+                            A pure FCC metal with density 8.96&nbsp;g/cm³ — the highest among common structural metals. Young's modulus is ~117&nbsp;GPa, and the longitudinal speed of sound is ~4760&nbsp;m/s. Acoustic impedance reaches ~42.6&nbsp;MRayl. The combination of high density and moderate stiffness gives copper a low natural frequency for a given geometry, producing a deep, muted acoustic output with rapid decay of high-frequency overtones. Its damping capacity (~1–2&nbsp;%) is somewhat higher than aluminium.<br/><br/>
+                            Copper's outstanding thermal (401&nbsp;W/(m·K)) and electrical conductivity (5.96&nbsp;×&nbsp;10⁷&nbsp;S/m at 20&nbsp;°C) are second only to silver among pure metals — a consequence of its single 4s valence electron and FCC lattice with minimal electron scattering. It oxidises readily, forming first Cu₂O (red) then CuO (black), and in chloride environments develops the green patina Cu₂(OH)₃Cl (atacamite). In metallurgy, beryllium copper (CuBe2, "beryllium bronze") is notable: precipitation of CuBe intermetallics raises yield strength to >1000&nbsp;MPa while retaining good conductivity (~25&nbsp;%&nbsp;IACS) and imparting excellent fatigue resistance — used for springs, non-sparking tools, and electrical contacts. Pure copper is difficult to machine due to its gummy, ductile behaviour; free-machining grades add Te or Pb.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cat-section">
+                <h2>Titanium</h2>
+                <ul class="mw-category-list">
+                    <li>
+                        <strong>Titanium (Ti-6Al-4V)</strong>
+                        <span class="item-desc">
+                            Titanium (Ti, Z&nbsp;=&nbsp;22) is an allotropic metal: the HCP α-phase is stable below 882&nbsp;°C, and the BCC β-phase above. The most widely used alloy, Ti-6Al-4V (Grade&nbsp;5), is an α+β duplex alloy stabilised by Al (α-stabiliser) and V (β-stabiliser). Density is 4.43&nbsp;g/cm³ — roughly midway between aluminium and steel — while Young's modulus is ~114&nbsp;GPa, comparable to copper. The longitudinal speed of sound is ~6100&nbsp;m/s, and acoustic impedance ~27&nbsp;MRayl.<br/><br/>
+                            Titanium's exceptional specific strength (σ<sub>y</sub>/ρ&nbsp;≈&nbsp;199&nbsp;kN·m/kg for Ti-6Al-4V, vs. ~102 for Al&nbsp;6061-T6 and ~32 for carbon steel&nbsp;1020) derives from its high yield strength (880&nbsp;MPa annealed) combined with moderate density. The low thermal conductivity (6.7&nbsp;W/(m·K)) leads to steep thermal gradients during machining, causing tool overheating and rapid wear; additionally, titanium's high chemical reactivity with tool materials at elevated temperatures promotes galling and built-up edge formation. The TiO₂ passive film provides outstanding corrosion resistance, particularly in chloride environments.<br/><br/>
+                            Acoustically, titanium's relatively high speed of sound and low damping produce a characteristically bright, sustained ring at high frequencies. The impedance (27&nbsp;MRayl) is significantly lower than steel (47&nbsp;MRayl) or copper (43&nbsp;MRayl), meaning more acoustic energy is transmitted rather than reflected at a steel–titanium or copper–titanium interface. Surface colour anodising — achieved by varying the oxide thickness electrolytically from ~0 to ~300&nbsp;nm — produces interference colours without dyes, a unique aesthetic property arising from thin-film optics.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="fade-section fade-delay-3">
+            <h2 style="font-size:1.5rem; font-weight:normal; border-bottom:1px solid #a2a9b1; margin-bottom:1rem; padding-bottom:0.2rem;">Data Table</h2>
+
+            <div class="wikitable-wrapper">
+                <table class="wikitable">
+                    <caption>Physical, elastic, and acoustic properties of common engineering metals and alloys</caption>
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>ρ<br/><small>(g/cm³)</small></th>
+                            <th>E<br/><small>(GPa)</small></th>
+                            <th>v<sub>L</sub> (bulk)<br/><small>(m/s)</small></th>
+                            <th>Z<br/><small>(MRayl)</small></th>
+                            <th>ν</th>
+                            <th>σ<sub>y</sub><br/><small>(MPa)</small></th>
+                            <th>T<sub>m</sub><br/><small>(°C)</small></th>
+                            <th>Crystal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Aluminium (pure)</td>
+                            <td>2.70</td>
+                            <td>69</td>
+                            <td>6420</td>
+                            <td>17.3</td>
+                            <td>0.33</td>
+                            <td>~15</td>
+                            <td>660</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Al 6061-T6</td>
+                            <td>2.70</td>
+                            <td>68.9</td>
+                            <td>~6320</td>
+                            <td>~17.1</td>
+                            <td>0.33</td>
+                            <td>276</td>
+                            <td>652</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Al 6063-T6</td>
+                            <td>2.70</td>
+                            <td>68.9</td>
+                            <td>~6320</td>
+                            <td>~17.1</td>
+                            <td>0.33</td>
+                            <td>214</td>
+                            <td>655</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Carbon steel (1020)</td>
+                            <td>7.85</td>
+                            <td>200</td>
+                            <td>5960</td>
+                            <td>46.8</td>
+                            <td>0.29</td>
+                            <td>250</td>
+                            <td>1520</td>
+                            <td>BCC</td>
+                        </tr>
+                        <tr>
+                            <td>Stainless steel 304</td>
+                            <td>7.93</td>
+                            <td>193</td>
+                            <td>5790</td>
+                            <td>45.9</td>
+                            <td>0.29</td>
+                            <td>215</td>
+                            <td>1450</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Brass (CuZn30)</td>
+                            <td>8.53</td>
+                            <td>110</td>
+                            <td>4700</td>
+                            <td>40.1</td>
+                            <td>0.34</td>
+                            <td>~200</td>
+                            <td>965</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Copper (C110)</td>
+                            <td>8.96</td>
+                            <td>117</td>
+                            <td>4760</td>
+                            <td>42.6</td>
+                            <td>0.34</td>
+                            <td>~70</td>
+                            <td>1085</td>
+                            <td>FCC</td>
+                        </tr>
+                        <tr>
+                            <td>Titanium (Ti-6Al-4V)</td>
+                            <td>4.43</td>
+                            <td>114</td>
+                            <td>6100</td>
+                            <td>27.0</td>
+                            <td>0.34</td>
+                            <td>880</td>
+                            <td>1660</td>
+                            <td>HCP (α+β)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="table-note">
+                <strong>v<sub>L</sub></strong> — longitudinal wave speed in an infinite/3D medium. This is higher than the thin-rod wave speed v<sub>bar</sub>&nbsp;=&nbsp;√(E/ρ) (e.g., carbon steel v<sub>bar</sub>&nbsp;≈&nbsp;5050&nbsp;m/s vs. v<sub>L</sub>&nbsp;≈&nbsp;5960&nbsp;m/s); do not substitute tabulated v<sub>L</sub> values into the bar-wave formula. <strong>Z</strong> — acoustic impedance (ρ&nbsp;&times;&nbsp;v<sub>L</sub>); <strong>ν</strong> — Poisson's ratio; <strong>σ<sub>y</sub></strong> — yield strength (temper- and processing-dependent); <strong>T<sub>m</sub></strong> — melting point (liquidus for alloys). Values are typical at 20&nbsp;°C. Alloy yield strengths assume standard tempers (T6 for aluminium alloys, annealed for Ti-6Al-4V, as-rolled for 1020, annealed for 304 and C110). "~" denotes approximate or composition-dependent values.
+            </p>
+        </div>
+
+        <div class="cat-footer fade-section fade-delay-3">
+            <a href="/en/home/materials-science-engineering" style="color:#0645ad; text-decoration:none;">← Back to Materials Science &amp; Engineering</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

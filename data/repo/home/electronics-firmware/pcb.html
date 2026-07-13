@@ -1,0 +1,443 @@
+<!--
+title: PCB
+description: 
+published: true
+date: 2026-07-13T01:23:04.012Z
+tags: 
+editor: code
+dateCreated: 2026-06-21T00:34:30.700Z
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mechanical Keyboard PCB – Wiki</title>
+<style>
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-section {
+    animation: fadeUp 0.6s ease both;
+  }
+  .fade-delay-1 { animation-delay: 0.1s; }
+  .fade-delay-2 { animation-delay: 0.2s; }
+  .fade-delay-3 { animation-delay: 0.3s; }
+
+  .wikimedia-category {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #202122;
+  }
+  .cat-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .cat-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .cat-desc {
+    font-size: 0.95rem;
+    color: #54595d;
+    margin-bottom: 1.5rem;
+  }
+  .cat-section {
+    margin: 2rem 0 1.5rem;
+  }
+  .cat-section h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  .mw-category-list {
+    list-style: none;
+    padding-left: 0;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  .mw-category-list li {
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+  }
+  .mw-category-list li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-weight: 500;
+  }
+  .mw-category-list li a:hover {
+    text-decoration: underline;
+  }
+  .item-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: #54595d;
+    margin-top: 0.2rem;
+  }
+  .cat-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eaecf0;
+    font-size: 0.85rem;
+    color: #54595d;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .mw-category-list { column-count: 1; }
+  }
+</style>
+<base target="_blank">
+</head>
+<body style="background:#fff; margin:0;">
+
+<div style="max-width:1100px; margin:0 auto; padding:2rem 1rem; font-family:system-ui, -apple-system, sans-serif; color:#0f172a;">
+
+  <!-- ===== HEADER ===== -->
+  <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:2rem;" class="fade-section">
+    <div style="width:80px!important; max-width:80px!important; margin:0 auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.29 699.10" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block; width:100%; height:auto;">
+        <g style="fill:#fff;stroke:#fff;stroke-width:56.7;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+        <g style="fill:#000;stroke:#000;stroke-width:34.02;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+        <g style="fill:#fff;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+      </svg>
+    </div>
+    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#475569; background:#f1f5f9; padding:0.2rem 1rem; border-radius:20px; margin-top:0.5rem;">Electronics · PCB Design</span>
+  </div>
+
+  <div style="text-align:center; margin-bottom:2.5rem;" class="fade-section fade-delay-1">
+    <h1 style="font-size:1.8rem; font-weight:700; margin:0 0 0.4rem;">Mechanical Keyboard PCB</h1>
+    <p style="font-size:1rem; color:#475569; margin:0;">Keyboard printed circuit board — matrix, microcontroller, passive components, connectors and protection circuits</p>
+  </div>
+
+  <!-- ===== TERMINOLOGY NOTE ===== -->
+  <div style="background:#f8fafc; border-left:4px solid #6366f1; border-radius:6px; padding:1rem 1.25rem; margin-bottom:2rem; font-size:0.9rem; color:#334155;" class="fade-section fade-delay-2">
+    <strong>Terminology note</strong><br/>
+    The <strong>printed circuit board</strong> (PCB) of a mechanical keyboard constitutes the central electronic component of the input device. Its function encompasses the acquisition of signals from key switches, their processing into digital data, and transmission to the computer via the USB interface. The PCB integrates all electronic components — the microcontroller, isolation diodes, resistors, capacitors, crystal oscillator, and USB connector — into a single functional circuit.<br/><br/>
+    In keyboard architecture, the <strong>keyboard matrix</strong> constitutes the input circuit topology, while the microcontroller acts as the processing unit. Correct operation of the whole requires close cooperation between the hardware layer (PCB layout) and the firmware layer — including matching the matrix orientation in hardware with the definition in firmware.
+  </div>
+
+  <div class="wikimedia-category fade-section fade-delay-2">
+
+    <div class="cat-section">
+      <h2>Keyboard Matrix</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Keyboard matrix</strong>
+          <span class="item-desc">
+            A circuit topology in which key switches are placed at the intersections of row and column lines. This architecture significantly reduces the number of microcontroller I/O lines required — a matrix of <em>m</em> rows and <em>n</em> columns requires only <em>m</em> + <em>n</em> pins to handle <em>m</em> × <em>n</em> switches. The process of reading key states (matrix scanning) involves cyclically activating rows or columns while simultaneously reading the state of lines configured as inputs.
+          </span>
+        </li>
+        <li>
+          <strong>COL2ROW</strong>
+          <span class="item-desc">
+            A matrix configuration where columns function as outputs and rows as inputs. Isolation diodes (if present) are oriented with the cathode towards the row line. This is the dominant configuration in the QMK firmware ecosystem. Correct keyboard operation requires the matrix orientation in the hardware layer to match the definition in the firmware.
+          </span>
+        </li>
+        <li>
+          <strong>ROW2COL</strong>
+          <span class="item-desc">
+            A matrix configuration where rows function as outputs and columns as inputs. In the active-high logic used by some designs, the cathodes of the isolation diodes are directed towards the column line. However, in the more common active-low (pull-up) configuration used in QMK/AVR, current flows into the output pin and the cathode must be directed towards the row. Less common than COL2ROW, but used in select designs. As with COL2ROW, the hardware orientation must correspond to the firmware definition.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Isolation Diodes</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Ghosting</strong>
+          <span class="item-desc">
+            The phenomenon of falsely registering a key press that was not actually pressed. It occurs in a matrix without diodes when three keys forming three vertices of a rectangle are pressed simultaneously — current flows along an undesired path (sneak path), creating the illusion of a fourth key being pressed at the intersection of the remaining lines. Eliminating ghosting requires placing a diode in series with each switch.
+          </span>
+        </li>
+        <li>
+          <strong>Isolation diodes and NKRO</strong>
+          <span class="item-desc">
+            A diode placed in series with a switch conducts current in only one direction (from anode to cathode), effectively blocking sneak paths and eliminating ghosting. The use of isolation diodes enables <strong>N-key rollover (NKRO)</strong> — the simultaneous recognition of any number of pressed keys without generating false signals.
+          </span>
+        </li>
+        <li>
+          <strong>1N4148</strong>
+          <span class="item-desc">
+            A standard switching diode in a through-hole DO-35 package. The most commonly used diode type in through-hole mounted (THT) keyboards. Forward current 200 mA, breakdown voltage 75 V, switching time 4 ns.
+          </span>
+        </li>
+        <li>
+          <strong>1N4148W</strong>
+          <span class="item-desc">
+            The SMD equivalent of the 1N4148 diode in a SOD-123 package. A standard surface-mount component used in surface-mount keyboards. Electrical specifications are identical to the through-hole version.
+          </span>
+        </li>
+        <li>
+          <strong>1N4148WS</strong>
+          <span class="item-desc">
+            A miniaturized variant of the 1N4148 diode in a SOD-323 package. Used in designs with limited PCB space, e.g., split keyboards with a compact layout.
+          </span>
+        </li>
+        <li>
+          <strong>BAV70</strong>
+          <span class="item-desc">
+            A dual diode in a SOT-23 package with a common cathode, allowing two keys to be handled by a single component. Reduces the number of components on the PCB and the mounting area. Electrical specifications are similar to the 1N4148.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Microcontroller</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Microcontroller (MCU)</strong>
+          <span class="item-desc">
+            The central control unit of the keyboard. It is responsible for cyclic matrix scanning, debouncing (eliminating contact bounce), encoding presses into the HID (Human Interface Device) protocol, and transmitting data via USB to the computer. The number of available GPIO pins determines the maximum size of the keyboard matrix and the ability to support additional features: RGB lighting, rotary encoders, or OLED displays.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Resistors</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Pull-up and pull-down resistors</strong>
+          <span class="item-desc">
+            Digital inputs of a microcontroller in a disconnected (floating) state have an undefined logic level, susceptible to fluctuations caused by electromagnetic interference. CMOS inputs have very high input impedance, causing them to act like antennas picking up 50/60 Hz mains hum and other noise from the environment. Pull-up resistors (tied to the power supply) and pull-down resistors (tied to ground) enforce a default, known logic state on input lines. In a keyboard matrix, they are used on lines configured as inputs. Many modern microcontrollers (RP2040, ATmega32U4) have these resistors built-in and they can be activated in software, eliminating the need for external components.
+          </span>
+        </li>
+        <li>
+          <strong>Reset circuit resistors</strong>
+          <span class="item-desc">
+            The microcontroller's reset pin must remain high during normal operation. A pull-up resistor connected to the RESET pin provides a stable logic level and prevents accidental system restarts due to interference. Parallel to this resistor, a button is connected that shorts the pin to ground, allowing a manual reset. Typical resistor value: 10 kΩ.
+          </span>
+        </li>
+        <li>
+          <strong>Bootloader configuration resistors</strong>
+          <span class="item-desc">
+            In ATmega32U4 chips, the HWB (Hardware Boot) pin requires a pull-down resistor to ground so that upon pressing the reset button, the microcontroller enters bootloader mode, allowing firmware programming via USB. This resistor (typically 10 kΩ) holds the HWB pin low, which is a condition for entering DFU programming mode.
+          </span>
+        </li>
+        <li>
+          <strong>USB line series resistors</strong>
+          <span class="item-desc">
+            Series resistors with values on the order of tens of ohms (typically 22 Ω or 27 Ω) are mounted on the USB data lines (D+ and D−). Their primary purpose is impedance matching — together with the driver output impedance inside the MCU they approximate the 45 Ω single-ended / 90 Ω differential characteristic impedance of USB 2.0 Full Speed — and damping signal reflections at high frequencies, which improves data transmission integrity. They also provide limited protection against small voltage spikes on the data lines. They should be placed as close to the microcontroller pins as possible.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Capacitors and Crystal Oscillator</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Decoupling capacitors</strong>
+          <span class="item-desc">
+            Microcontrollers and other digital ICs generate short, rapid current spikes during logic state transitions. Decoupling capacitors are mounted as close as possible to the microcontroller's VCC/GND power pins. Typically, 100 nF ceramic capacitors are used at each pair of power pins, along with an electrolytic or ceramic capacitor of several microfarads at the main power input. Their role is to store charge locally and supply the IC during spikes, preventing voltage drops and interference.
+          </span>
+        </li>
+        <li>
+          <strong>Crystal load capacitors</strong>
+          <span class="item-desc">
+            A crystal oscillator requires two load capacitors to operate properly, typically with capacitances on the order of tens of picofarads. The value is selected based on the crystal's parameters (its load capacitance). These capacitors form a resonant circuit with the crystal, which determines the exact clock frequency of the microcontroller.
+          </span>
+        </li>
+        <li>
+          <strong>UCap pin capacitor</strong>
+          <span class="item-desc">
+            In the ATmega32U4, the UCap pin requires an external capacitor of approximately 1 µF connected to ground. This capacitor stabilizes the internal 3.3 V voltage regulator of the USB peripheral, ensuring proper communication on the USB bus.
+          </span>
+        </li>
+        <li>
+          <strong>Crystal oscillator</strong>
+          <span class="item-desc">
+            Provides the microcontroller with a stable clock signal that synchronizes all digital operations, including matrix scanning and USB communication. For the ATmega32U4, a 16 MHz crystal oscillator is typically used. The crystal must be placed as close to the microcontroller pins as possible, and the traces leading to it should be short and symmetrical to minimize interference and ensure oscillation stability. Some microcontrollers (e.g., RP2040) have an internal oscillator and do not require an external crystal.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>USB Connector and Protection Circuits</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>USB connector</strong>
+          <span class="item-desc">
+            The main communication and power interface of the keyboard. Modern designs increasingly use <strong>USB-C</strong> due to its reversible plug orientation. Older or budget designs still feature <strong>Mini-B</strong> or <strong>Micro-B</strong> connectors. The USB-C connector requires additional configuration resistors on the CC1/CC2 pins.
+          </span>
+        </li>
+        <li>
+          <strong>ESD protection</strong>
+          <span class="item-desc">
+            Electrostatic Discharge (ESD) protection devices, such as the PRTR5V0U2X, are mounted on the USB data lines (D+, D−) and often on the power line. They drain short, high-voltage static spikes to ground, which could otherwise damage sensitive digital circuitry of the microcontroller. They are a critical element for keyboard reliability, especially since the port is exposed to statically charged users.
+          </span>
+        </li>
+        <li>
+          <strong>Polyfuse</strong>
+          <span class="item-desc">
+            A polymer fuse mounted in series with the VBUS power line. If the allowable current is exceeded (e.g., during a short circuit), it increases its resistance, cutting off power to the rest of the circuit. Once the cause of the overload is removed, the fuse automatically returns to its original state. Typical trip current for keyboards: 500 mA.
+          </span>
+        </li>
+        <li>
+          <strong>USB-C configuration resistors</strong>
+          <span class="item-desc">
+            In USB-C connectors, the CC1 and CC2 pins (Configuration Channel) are used to detect plug orientation, connection presence, and current negotiation. They require external 5.1 kΩ pull-down resistors (for a device mode downstream facing port). The SBU1 and SBU2 pins remain unused in keyboards.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Buttons and Programming Interface</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Reset button</strong>
+          <span class="item-desc">
+            An electromechanical component (tactile switch) that allows manual restarting of the microcontroller. It shorts the RESET pin to ground, forcing the IC to reinitialize. In the custom keyboard ecosystem, this button is crucial for programming and updating the firmware.
+          </span>
+        </li>
+        <li>
+          <strong>Bootloader mode</strong>
+          <span class="item-desc">
+            A special microcontroller operating mode that allows firmware programming or updating via USB without the need for an external hardware programmer. In ATmega32U4 chips, activation requires pressing the reset button while the HWB pin is held low. In chips with a DFU bootloader (e.g., STM32), this mode is activated by tying the boot0 pin high and resetting. Some boards (e.g., Pro Micro) automatically enter bootloader mode for a short time after a reset (Caterina bootloader). In modern designs using the RP2040, bootloader mode is entered by holding the BOOTSEL button during power-up or reset, which disconnects the Flash and exposes the device as a USB mass-storage drive.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Electrostatic Capacitive (EC) Switches</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Electrostatic capacitive sensing principle</strong>
+          <span class="item-desc">
+            The EC switch operates on the principle of variable capacitance. A conductive spring and a fixed electrode on the PCB form a parallel-plate capacitor whose capacitance is described by <em>C = ε₀εᵣA/d</em>, where <em>d</em> is the distance between the spring and the electrode. Pressing the key compresses the rubber dome, reducing <em>d</em> and increasing capacitance. The controller detects this change by measuring charge/discharge time or integrating a displacement current. Because the system does not rely on ohmic contact, the switch is inherently debounced and offers a lifespan exceeding 50 million actuations.
+          </span>
+        </li>
+        <li>
+          <strong>EC matrix and electrode layout</strong>
+          <span class="item-desc">
+            Unlike a mechanical matrix, the EC PCB contains a grid of copper electrodes (pads) on the top layer, each positioned directly beneath the switch spring. Rows are typically driven with short voltage pulses (burst scanning), while columns are read as analog inputs. The high input impedance of the sensing circuit (often &gt;1 MΩ) is necessary to prevent leakage currents from distorting the femtofarad-scale capacitance changes. This topology natively supports N-key rollover because each key forms an independent capacitive node.
+          </span>
+        </li>
+        <li>
+          <strong>Operational amplifier and comparator stage</strong>
+          <span class="item-desc">
+            The raw capacitive signal is too weak for direct ADC sampling. A transimpedance or charge-amplifier stage (built around a low-offset op-amp) converts the capacitive change into a voltage swing. Alternatively, a comparator with hysteresis (Schmitt trigger) thresholds the analog level into a digital press/release state. The hysteresis window (typically tens of millivolts) prevents chatter caused by mechanical vibration of the spring. Some designs use a synchronous demodulator to suppress 50/60 Hz mains hum picked up by the large-area electrodes.
+          </span>
+        </li>
+        <li>
+          <strong>Scanning speed and polling optimization</strong>
+          <span class="item-desc">
+            To achieve a 1 ms polling interval, the firmware applies a burst of excitation pulses to each row in rapid succession (time-division multiplexing). The column signals are sampled immediately after each burst, before the RC time constant of the electrode decays. The use of a fast ARM Cortex-M4 microcontroller (e.g., STM32F411 at 100 MHz) with a multi-channel DMA-driven ADC allows parallel sampling of multiple columns, reducing the total matrix scan time to microseconds.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Hall Effect Sensors</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Hall effect physical principle</strong>
+          <span class="item-desc">
+            The Hall effect arises from the Lorentz force acting on charge carriers in a semiconductor. When a bias current <em>I</em> flows through a Hall element perpendicular to an applied magnetic field <em>B</em>, a transverse voltage <em>V<sub>H</sub> = (I·B)/(n·e·t)</em> appears perpendicular to both the current and the magnetic field, where <em>n</em> is the carrier density, <em>e</em> the elementary charge, and <em>t</em> the element thickness. In keyboard switches, a permanent magnet embedded in the stem moves relative to a surface-mount Hall sensor (e.g., OH49E, SS49E), causing the perpendicular component of <em>B</em> at the sensor to vary linearly with key travel.
+          </span>
+        </li>
+        <li>
+          <strong>Analog Hall sensor and ADC interface</strong>
+          <span class="item-desc">
+            Linear Hall sensors output an analog voltage (typically 0.5–4.5 V for a 5 V supply) proportional to the magnetic flux density. On the PCB, each sensor requires a stable power rail (3.3 V or 5 V) and a decoupling capacitor (100 nF) to suppress noise from the switching magnet. The output is routed to the microcontroller's ADC pin, either directly or through an analog multiplexer (e.g., 74HC4067) if the MCU has insufficient analog channels. The ADC resolution (usually 12-bit) determines the minimum detectable travel increment, enabling sub-millimeter actuation-point adjustment in firmware.
+          </span>
+        </li>
+        <li>
+          <strong>Hall matrix architecture</strong>
+          <span class="item-desc">
+            Because Hall sensors are active devices requiring continuous power, a traditional diode-isolated matrix is unsuitable. Instead, the PCB routes power and ground in parallel to all sensors, while the outputs are wired in a row/column grid read by multiplexers or a dedicated ADC-per-column scheme. Some designs employ a 1×<em>n</em> linear scan with a single multiplexer and a sample-and-hold circuit. Others use a dedicated Hall-ADC IC with an I²C/SPI interface to reduce pin count. The absence of contact bounce eliminates the need for software debouncing, though median filtering is often applied to ADC samples to reduce magnetic noise.
+          </span>
+        </li>
+        <li>
+          <strong>Power and thermal considerations</strong>
+          <span class="item-desc">
+            A linear Hall sensor draws a quiescent current of 3–10 mA (modern keyboard-dedicated sensors may operate at 2–3 mA or feature power-saving modes). In a 100-key keyboard, the total sensor current can approach 500–800 mA in the worst case, exceeding the 500 mA standard USB limit. The PCB must therefore include either an external 5 V power input or a high-efficiency buck regulator to supply the sensors. The copper pours around the sensor array should be thermally connected to the ground plane to dissipate heat, as the sensors' offset voltage drifts with temperature (typical coefficient: ±0.1 %/°C).
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>TMR (Tunnel MagnetoResistance) Sensors</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>TMR physical principle</strong>
+          <span class="item-desc">
+            Tunnel MagnetoResistance exploits spin-dependent quantum tunneling through an ultra-thin insulating barrier (typically MgO) sandwiched between two ferromagnetic layers. The resistance of the stack depends on the relative orientation of the magnetizations: <em>R(θ) = R<sub>min</sub> + (R<sub>max</sub> − R<sub>min</sub>)·sin²(θ/2)</em>, where <em>θ</em> is the angle between the layers. In keyboard PCBs, the TMR sensor detects the in-plane component of the magnetic field from the switch magnet, yielding a resistance change orders of magnitude larger than the Hall voltage for the same field strength.
+          </span>
+        </li>
+        <li>
+          <strong>TMR vs. Hall effect on PCB</strong>
+          <span class="item-desc">
+            While Hall sensors measure the perpendicular component of <em>B</em> via carrier deflection, TMR sensors measure the in-plane component via magnetization rotation in a free ferromagnetic layer. The TMR effect produces a relative resistance change of 100–600 %, compared to &lt;0.1 % for Hall elements. Consequently, TMR sensors require less gain and simpler readout circuitry—often just a Wheatstone bridge or a constant-current source with a single-ended amplifier. The sensor footprint (SOT-23 or smaller) is comparable to Hall ICs, but the sensitivity is roughly three orders of magnitude higher.
+          </span>
+        </li>
+        <li>
+          <strong>Power efficiency and thermal stability</strong>
+          <span class="item-desc">
+            TMR sensors consume 0.001–0.01 mA per channel, roughly 1000× less than analog Hall arrays (5–10 mA). This makes TMR the preferred technology for wireless keyboards, where battery life is critical. Additionally, the TMR stack retains its magnetic properties up to 200 °C (compared to ~150 °C for Hall elements), reducing temperature drift in the actuation threshold. The PCB layout should minimize trace length between the TMR bridge and the instrumentation amplifier to reduce thermoelectric offsets from copper-to-solder junctions.
+          </span>
+        </li>
+        <li>
+          <strong>Actuation precision and rapid trigger</strong>
+          <span class="item-desc">
+            The high signal-to-noise ratio of TMR bridges enables 0.01 mm actuation resolution. The firmware implements a hysteresis comparator with programmable upper and lower thresholds around the magnet's travel curve. Because the TMR response is monotonic and fast (bandwidth &gt;1 MHz), the controller can detect direction reversal (rapid trigger) within a single polling cycle, eliminating the dead zone inherent in mechanical contacts. The PCB must route the sensor supply through a low-noise LDO and shield the analog traces from USB data-line crosstalk to preserve this precision.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="cat-footer fade-section fade-delay-3">
+    <a href="//en/home/electronics-firmware" style="color:#0645ad; text-decoration:none;">← Back to Electronics & Firmware</a>
+  </div>
+
+</div>
+
+</body>
+</html>

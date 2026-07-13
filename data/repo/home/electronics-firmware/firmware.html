@@ -1,0 +1,222 @@
+<!--
+title: Firmware
+description: 
+published: true
+date: 2026-06-21T01:24:09.268Z
+tags: 
+editor: code
+dateCreated: 2026-06-21T01:05:38.163Z
+-->
+
+<style>
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-section {
+    animation: fadeUp 0.6s ease both;
+  }
+  .fade-delay-1 { animation-delay: 0.1s; }
+  .fade-delay-2 { animation-delay: 0.2s; }
+  .fade-delay-3 { animation-delay: 0.3s; }
+
+  .wikimedia-category {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #202122;
+  }
+  .cat-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .cat-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .cat-desc {
+    font-size: 0.95rem;
+    color: #54595d;
+    margin-bottom: 1.5rem;
+  }
+  .cat-section {
+    margin: 2rem 0 1.5rem;
+  }
+  .cat-section h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+  }
+  .mw-category-list {
+    list-style: none;
+    padding-left: 0;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  .mw-category-list li {
+    break-inside: avoid;
+    margin-bottom: 0.75rem;
+    padding-left: 0.25rem;
+  }
+  .mw-category-list li a {
+    text-decoration: none;
+    color: #0645ad;
+    font-weight: 500;
+  }
+  .mw-category-list li a:hover {
+    text-decoration: underline;
+  }
+  .item-desc {
+    display: block;
+    font-size: 0.85rem;
+    color: #54595d;
+    margin-top: 0.2rem;
+  }
+  .cat-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eaecf0;
+    font-size: 0.85rem;
+    color: #54595d;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .mw-category-list { column-count: 1; }
+  }
+</style>
+
+<div style="max-width:1100px; margin:0 auto; padding:2rem 1rem; font-family:system-ui, -apple-system, sans-serif; color:#0f172a;">
+
+  <!-- ===== HEADER ===== -->
+  <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:2rem;" class="fade-section">
+    <div style="width:80px!important; max-width:80px!important; margin:0 auto;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.29 699.10" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block; width:100%; height:auto;">
+        <g style="fill:#fff;stroke:#fff;stroke-width:56.7;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+        <g style="fill:#000;stroke:#000;stroke-width:34.02;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+        <g style="fill:#fff;">
+          <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
+          <path d="M247.55 309.55V28.35H412.75L445.95 61.55V143.95L412.75 177.15L445.95 210.35V276.35L412.75 309.55H247.55ZM363.15 143.95V110.75H329.95V143.95H363.15ZM363.15 226.75V193.55H329.95V226.75H363.15Z"/>
+          <path d="M532.75 309.55L466.75 243.55V28.35H549.55V210.35L565.95 226.75L582.35 210.35V28.35H665.15V210.75L681.55 226.75L697.95 210.35V28.35H780.75V243.55L714.75 309.55H648.75L623.95 284.75L599.15 309.55H532.75Z"/>
+          <path d="M801.55 309.15V28.35H884.35V139.15L917.55 105.95V28.35H999.95V122.35L950.35 171.95L999.95 221.55V309.15H917.15V237.95L883.95 204.75V309.15H801.55Z"/>
+          <path d="M209.95 670.35L143.95 604.35V389.55H226.75V571.55L243.15 587.95L259.55 571.55V389.55H342.35V571.95L358.75 587.95L375.15 571.55V389.55H457.95V604.35L391.95 670.35H325.95L301.15 645.55L276.35 670.35H209.95Z"/>
+          <path d="M478.75 670.35V389.55H561.55V670.35Z"/>
+          <path d="M582.35 670.35V389.55H665.15V500.35L698.35 467.15V389.55H780.75V483.55L731.15 533.15L780.75 582.75V670.35H697.95V599.15L664.75 565.95V670.35H582.35Z"/>
+          <path d="M801.55 670.35V389.55H884.35V670.35Z"/>
+        </g>
+      </svg>
+    </div>
+    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#475569; background:#f1f5f9; padding:0.2rem 1rem; border-radius:20px; margin-top:0.5rem;">Embedded · Hardware</span>
+  </div>
+
+  <div style="text-align:center; margin-bottom:2.5rem;" class="fade-section fade-delay-1">
+    <h1 style="font-size:1.8rem; font-weight:700; margin:0 0 0.4rem;">Firmware</h1>
+    <p style="font-size:1rem; color:#475569; margin:0;">Keyboard firmware frameworks, RTOS, bootloaders and hardware abstraction</p>
+  </div>
+
+  <!-- ===== TERMINOLOGY NOTE ===== -->
+  <div style="background:#f8fafc; border-left:4px solid #6366f1; border-radius:6px; padding:1rem 1.25rem; margin-bottom:2rem; font-size:0.9rem; color:#334155;" class="fade-section fade-delay-2">
+    <strong>Terminology note</strong><br/>
+    <strong>Firmware</strong> is software stored in a device's non-volatile memory (flash/ROM) that directly controls its hardware. It is typically written in a compiled language such as <strong>C</strong> — a low-level, general-purpose language that compiles directly to machine code, making it well suited for microcontrollers with limited resources.<br/><br/>
+    A <strong>library</strong> is a collection of reusable functions that the developer calls from their own code. A <strong>framework</strong>, by contrast, owns the program's execution flow and calls the developer's code at defined points — a principle known as <em>Inversion of Control (IoC)</em>.<br/><br/>
+    <strong>TMK, QMK, and ZMK</strong> are strictly <em>firmware frameworks</em>: they provide the full program skeleton (matrix scanning loop, USB HID stack, debouncing logic) and invoke the user's keymap at specific lifecycle events. When the framework's C source is compiled by a toolchain (e.g. <code>avr-gcc</code>, <code>arm-none-eabi-gcc</code>) and the resulting binary is flashed onto the MCU, that binary <em>is</em> the firmware. The projects therefore occupy a dual role: they are <em>frameworks</em> for building firmware and, once compiled and flashed, they <em>constitute</em> the firmware itself.
+  </div>
+
+  <div class="wikimedia-category fade-section fade-delay-2">
+
+    <div class="cat-section">
+      <h2>Keyboard Firmware Frameworks</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>TMK</strong>
+          <span class="item-desc">
+            The original open-source keyboard firmware framework by tmk. Written in C, it supports AVR and ARM MCUs. TMK owns the main loop — it initialises peripherals, scans the key matrix, runs debouncing, and handles USB HID communication. The user only fills in the keymap array; the framework calls that data at scan time. This Inversion of Control makes TMK a framework, not a library. It is the foundation from which QMK was forked.
+          </span>
+        </li>
+        <li>
+          <strong>QMK</strong>
+          <span class="item-desc">
+            Quantum Mechanical Keyboard — a feature-rich firmware framework forked from TMK. Written in C, it extends TMK with dynamic macros, RGB lighting control, mouse keys, an extensive keycode system, and the <code>qmk</code> CLI build tool. Like TMK, it uses Inversion of Control: the framework's scanning loop calls the user-defined keymap. QMK source is compiled by <code>avr-gcc</code> or <code>arm-none-eabi-gcc</code> into a binary that is flashed as firmware onto the MCU. It is therefore a firmware framework, not a library, and not firmware in isolation — only the compiled binary flashed to hardware is firmware.
+          </span>
+        </li>
+        <li>
+          <strong>ZMK</strong>
+          <span class="item-desc">
+            A modern, wireless-first keyboard firmware framework built as an application on top of the Zephyr RTOS. Written in C. Zephyr itself acts as the OS/runtime layer; ZMK is the framework that specialises Zephyr for keyboard functionality. Hardware configuration uses Devicetree overlay files (<code>.overlay</code>); keymaps are defined in Devicetree-format <code>.keymap</code> files — not YAML. Supports BLE, split keyboards, and low-power operation. Built and flashed via the <code>west</code> build tool.
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Real‑Time Operating Systems (RTOS)</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Zephyr</strong>
+          <span class="item-desc">A scalable, open-source RTOS hosted by the Linux Foundation. Provides a rich driver model, a Devicetree-based hardware description system, Kconfig build configuration, and support for over 500 boards. Used in industrial, IoT, and consumer embedded devices. ZMK runs on top of Zephyr as an application framework.</span>
+        </li>
+        <li>
+          <strong>ChibiOS</strong>
+          <span class="item-desc">A compact, high-performance RTOS targeting ARM Cortex-M microcontrollers. Includes a Hardware Abstraction Layer (HAL), a TCP/IP stack, and a FAT filesystem. Known for its efficient interrupt latency and small flash/RAM footprint. Used by QMK on certain ARM-based keyboards.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>Bootloaders</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>DFU / USB‑DFU</strong>
+          <span class="item-desc">Device Firmware Upgrade — a USB standard that allows a device to receive and write a new firmware binary over USB without an external programmer. The bootloader is a small piece of firmware itself, stored in a protected memory region, that runs before the main application and checks for an incoming update. Widely used on STM32, nRF52, and ATmega32U4 MCUs.</span>
+        </li>
+        <li>
+          <strong>U‑Boot</strong>
+          <span class="item-desc">A widely-used open-source primary bootloader for embedded Linux systems. Supports multiple filesystems, network (TFTP) boot, and verified/secure boot. Typically used on higher-end ARM and RISC-V application processors (e.g. i.MX, Allwinner, Rockchip) rather than the bare-metal MCUs used in keyboards.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cat-section">
+      <h2>HAL &amp; Peripheral Drivers</h2>
+      <ul class="mw-category-list">
+        <li>
+          <strong>Hardware Abstraction Layer (HAL)</strong>
+          <span class="item-desc">A layer of C code, typically provided by the silicon vendor (e.g. STM32Cube HAL, NXP MCUXpresso SDK), that exposes a uniform API for peripherals such as GPIO, UART, SPI, I²C, and DMA. HALs are libraries in the strict sense — the developer calls their functions. They make firmware more portable across device families without rewriting low-level register code.</span>
+        </li>
+        <li>
+          <strong>Timer &amp; PWM</strong>
+          <span class="item-desc">Hardware timers in MCUs are used for accurate delay generation, frequency measurement, and periodic task scheduling. PWM (Pulse Width Modulation) is generated by configuring a timer's compare channel to toggle a GPIO at a defined duty cycle — essential for controlling motor speed, LED brightness, and audio output.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="cat-footer fade-section fade-delay-3">
+    <a href="/en/home/electronics-firmware" style="color:#0645ad; text-decoration:none;">← Back to Electronics &amp; Firmware</a>
+  </div>
+
+</div>

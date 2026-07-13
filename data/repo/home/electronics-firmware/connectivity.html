@@ -1,31 +1,14 @@
 <!--
-title: Home page
+title: Connectivity
 description: 
 published: true
-date: 2026-06-15T23:05:03.876Z
+date: 2026-06-28T23:22:49.900Z
 tags: 
 editor: code
-dateCreated: 2026-05-23T19:29:40.561Z
+dateCreated: 2026-06-28T22:57:45.469Z
 -->
 
 <style>
-  .keycap-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .keycap-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px -8px rgba(0,0,0,0.12), 0 0 0 1px rgba(59,130,246,0.2);
-  }
-  .search-btn {
-    transition: background 0.2s, transform 0.1s;
-  }
-  .search-btn:hover {
-    background: #2563eb;
-  }
-  .search-btn:active {
-    transform: scale(0.97);
-  }
-
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(12px); }
     to { opacity: 1; transform: translateY(0); }
@@ -36,86 +19,68 @@ dateCreated: 2026-05-23T19:29:40.561Z
   .fade-delay-1 { animation-delay: 0.1s; }
   .fade-delay-2 { animation-delay: 0.2s; }
   .fade-delay-3 { animation-delay: 0.3s; }
-
-  .wikimedia-category {
+  .topic-content {
     max-width: 1100px;
     margin: 0 auto;
     font-family: system-ui, -apple-system, sans-serif;
     color: #202122;
   }
-  .cat-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .cat-title {
-    font-size: 1.8rem;
-    font-weight: normal;
-    border-bottom: 1px solid #a2a9b1;
-    display: inline-block;
-    padding-bottom: 0.2rem;
-    margin-bottom: 0.5rem;
-  }
-  .cat-desc {
-    font-size: 0.95rem;
-    color: #54595d;
-    margin-bottom: 1.5rem;
-  }
-  .cat-section {
+  .topic-content .sub-section {
     margin: 2rem 0 1.5rem;
   }
-  .cat-section h2 {
+  .topic-content .sub-section h2 {
     font-size: 1.5rem;
     font-weight: normal;
     border-bottom: 1px solid #a2a9b1;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     padding-bottom: 0.2rem;
   }
-  .mw-category-list {
-    list-style: none;
-    padding-left: 0;
-    column-count: 3;
-    column-gap: 2rem;
+  .topic-content .sub-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #202122;
+    margin: 0.5rem 0;
   }
-  .mw-category-list li {
-    break-inside: avoid;
-    margin-bottom: 0.75rem;
-    padding-left: 0.25rem;
+  .topic-content .sub-section ul {
+    margin: 0.5rem 0 0 1.5rem;
+    color: #202122;
   }
-  .mw-category-list li a {
-    text-decoration: none;
+  .topic-content .sub-section ul li {
+    margin-bottom: 0.3rem;
+  }
+  .back-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
     color: #0645ad;
-    font-weight: 500;
+    text-decoration: none;
   }
-  .mw-category-list li a:hover {
+  .back-link:hover {
     text-decoration: underline;
   }
-  .item-desc {
-    display: block;
-    font-size: 0.85rem;
+  .breadcrumb {
+    font-size: 0.8rem;
     color: #54595d;
-    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
   }
-  .cat-footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eaecf0;
-    font-size: 0.85rem;
-    color: #54595d;
-    text-align: center;
+  .breadcrumb a {
+    color: #0645ad;
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
   }
   @media (max-width: 768px) {
-    .mw-category-list { column-count: 2; }
-  }
-  @media (max-width: 540px) {
-    .mw-category-list { column-count: 1; }
+    .topic-content .sub-section h2 {
+      font-size: 1.3rem;
+    }
   }
 </style>
 
 <div style="max-width:1100px; margin:0 auto; padding:2rem 1rem; font-family:system-ui, -apple-system, sans-serif; color:#0f172a;">
 
-  <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 24px; padding: 3rem 2rem; margin-bottom: 2.5rem; text-align: center; color: #fff; box-shadow: 0 8px 32px rgba(102,126,234,0.25);" class="fade-section">
-    
-    <div style="width:80px; margin:0 auto 1.2rem;">
+  <div style="display:flex; flex-direction:column; align-items:center; margin-bottom:1.5rem;" class="fade-section">
+    <div style="width:80px!important; max-width:80px!important; margin:0 auto;">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1028.29 699.10" width="100%" height="auto" preserveAspectRatio="xMidYMid meet" style="display:block; width:100%; height:auto;">
         <g style="fill:#fff;stroke:#fff;stroke-width:56.7;stroke-linejoin:miter;stroke-miterlimit:10;stroke-linecap:square;paint-order:stroke fill;">
           <path d="M28.35 309.55V177.15H111.15V226.75H143.95V28.35H226.75V309.55H28.35Z"/>
@@ -149,59 +114,46 @@ dateCreated: 2026-05-23T19:29:40.561Z
         </g>
       </svg>
     </div>
-    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; background:rgba(255,255,255,0.18); padding:0.2rem 1rem; border-radius:20px; display:inline-block; margin-bottom:1.5rem;">Ddd uuu pppp aaaa</span>
-    
-    <h1 id="witaj-w-jbwk-wiki" style="font-size:2.2rem; font-weight:700; margin:0 0 0.5rem; color:#fff; text-decoration:none; border-bottom:none;">Welcome to JBWK Wiki</h1>
-    <p style="font-size:1.1rem; opacity:0.9; margin:0 0 1.8rem;">knowledge base about keyboards – some description idk what to write so I'm writing whatever, but I have no idea.</p>
- 
-    <form action="/search" method="GET" style="display:flex; max-width:500px; margin:0 auto;">
-      <input type="text" name="q" placeholder="Search the wiki..." style="flex:1; padding:0.75rem 1rem; border:none; border-radius:12px 0 0 12px; font-size:1rem; outline:none; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
-      <button type="submit" class="search-btn" style="background:#3b82f6; color:#fff; border:none; padding:0 1.5rem; border-radius:0 12px 12px 0; font-weight:600; font-size:1rem; cursor:pointer; display:flex; align-items:center; gap:0.4rem;">
-        <span style="font-size:1.2rem;"></span> Search
-      </button>
-    </form>
+    <span style="font-size:0.65rem; font-weight:600; letter-spacing:0.2em; text-transform:uppercase; color:#475569; background:#f1f5f9; padding:0.2rem 1rem; border-radius:20px; margin-top:0.5rem;">Embedded · Hardware</span>
   </div>
 
-  <div class="wikimedia-category fade-section fade-delay-2">
-    <div class="cat-header">
-      <div class="cat-title">Browse sections</div>
-      <div class="cat-desc">Click a category to check.</div>
-    </div>
-    <div class="cat-section">
-      <ul class="mw-category-list">
-        <li>
-          <a href="/en/home/physics-acoustics">Physics & Acoustics</a>
-        </li>
-        <li>
-          <a href="/en/home/materials-science-engineering">Materials Science & Engineering</a>
-        </li>
-        <li>
-          <a href="/en/home/electronics-firmware">Electronics & Firmware</a>
-        </li>
-        <li>
-          <a href="/en/home/design-layouts">Design & Layouts</a>
-        </li>
-        <li>
-          <a href="/en/home/history-retro">History & Retro</a>
-        </li>
-        <li>
-          <a href="/en/home/switches">Switches</a>
-        </li>
-        <li>
-          <a href="/en/home/keycaps">Keycaps</a>
-        </li>
-        <li>
-          <a href="/en/home/modding-diy">Modding & DIY</a>
-        </li>
-        <li>
-          <a href="/en/home/guides">Guides</a>
-        </li>
+  <div style="text-align:center; margin-bottom:0.5rem;" class="fade-section fade-delay-1">
+    <h1 style="font-size:1.8rem; font-weight:700; margin:0 0 0.2rem;">Connectivity</h1>
+    <p style="font-size:1rem; color:#475569; margin:0;">Wireless communication protocols and interfaces</p>
+  </div>
+
+  <!-- <div class="breadcrumb fade-section fade-delay-1">
+    <a href="/en/home/electronics-firmware">Electronics &amp; Firmware</a> &nbsp;›&nbsp; Connectivity
+  </div> -->
+
+  <div class="topic-content fade-section fade-delay-2">
+
+    <div class="sub-section">
+      <h2>Bluetooth Low Energy / Bluetooth</h2>
+      <p>Bluetooth is a short-range wireless communication standard for exchanging data over distances up to 100 meters. Bluetooth Low Energy (BLE) is a power-efficient variant introduced in Bluetooth 4.0, designed for IoT devices, wearables, and sensors. BLE uses a 2.4 GHz ISM band with 40 channels, supports connection-oriented and broadcast modes, and features low-duty-cycle operation for extended battery life.</p>
+      <ul>
+        <li><strong>BLE 5.0+:</strong> Increased range (4×), speed (2×), and broadcast capacity (8×).</li>
+        <li><strong>GATT:</strong> Generic Attribute Profile for service and characteristic discovery.</li>
+        <li><strong>Advertising:</strong> Broadcast beacons (iBeacon, Eddystone) for proximity and location.</li>
+        <li><strong>HID over GATT:</strong> Used for keyboards, mice, and other human interface devices.</li>
+        <li><strong>Mesh:</strong> Bluetooth Mesh for large-scale device networks (lighting, etc.).</li>
       </ul>
     </div>
-  </div>
 
-  <div style="text-align:center; margin-top:3rem; padding-top:1.5rem; border-top:1px solid #e2e8f0; font-size:0.85rem; color:#94a3b8;" class="fade-section fade-delay-3">
-    <p style="margin:0;">something something something idk</p>
+    <div class="sub-section">
+      <h2>USB‑RF</h2>
+      <p>USB-RF refers to wireless communication using USB dongles with proprietary or standard RF protocols in the sub-1 GHz or 2.4 GHz bands. Common implementations include 2.4 GHz modules (nRF24L01, CC2500) and sub-1 GHz modules (CC1101, Si4463). USB-RF is often used for wireless keyboards, mice, game controllers, and remote controls where low latency and low cost are prioritized over standardization.</p>
+      <ul>
+        <li><strong>nRF24L01+:</strong> 2.4 GHz transceiver with 250 kbps, 1 Mbps, 2 Mbps data rates.</li>
+        <li><strong>CC1101:</strong> Sub-1 GHz (315/433/868/915 MHz) with excellent range and penetration.</li>
+        <li><strong>Protocols:</strong> Proprietary, Enhanced ShockBurst, or Nordic's Gazell.</li>
+        <li><strong>USB HID:</strong> USB-RF dongles often present as standard HID devices to the host.</li>
+        <li><strong>Low latency:</strong> Typical latency < 5 ms for gaming peripherals.</li>
+      </ul>
+    </div>
+
+    <a href="/en/home/electronics-firmware" class="back-link">← Back to Electronics &amp; Firmware</a>
+
   </div>
 
 </div>
